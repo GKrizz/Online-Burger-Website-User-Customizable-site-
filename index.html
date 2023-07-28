@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Brrrgrrr - Online Burger Website</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Brrrgrrr - Online Burger Website</h1>
+  </header>
+  <main>
+    <div id="burger-container">
+      <h2>Customize Your Burger</h2>
+      <div id="burger">
+        <!-- Dynamic burger creation based on selected ingredients -->
+      </div>
+      <div id="ingredient-list">
+        <div class="ingredient" data-ingredient="lettuce">
+          <img src="lettuce.png" alt="Lettuce" />
+        </div>
+        <div class="ingredient" data-ingredient="tomato">
+          <img src="tomato.png" alt="Tomato" />
+        </div>
+        <div class="ingredient" data-ingredient="cheese">
+          <img src="cheese.png" alt="Cheese" />
+        </div>
+        <div class="ingredient" data-ingredient="onion">
+          <img src="onion.png" alt="Onion" />
+        </div>
+        <!-- Add more ingredients as needed -->
+      </div>
+
+      <div id="total-price"></div>
+
+      <button id="create-burger-btn" >Create Burger</button>
+      <button class="order-button" id="order-btn">Order Now</button>
+      
+    </div>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
