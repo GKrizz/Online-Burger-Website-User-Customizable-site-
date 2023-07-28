@@ -1,0 +1,143 @@
+/* Basic Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  h1 {
+    margin: 0;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  #burger-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  h2 {
+    margin-bottom: 10px;
+  }
+  
+  #burger {
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px;
+    height: 300px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #ingredient-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .ingredient {
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .ingredient:hover {
+    transform: scale(1.1);
+  }
+  
+  .ingredient img {
+    max-width: 60px;
+    max-height: 60px;
+  }
+  
+  .add-button,
+  .remove-button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    margin-top: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .add-button:hover,
+  .remove-button:hover {
+    background-color: #555;
+  }
+  
+  .selected-ingredient {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .selected-ingredient img {
+    max-width: 100px;
+    max-height: 100px;
+  }
+  
+  .total-price-label {
+    font-weight: bold;
+  }
+  
+  #total-price {
+    font-size: 20px;
+    margin-top: 10px;
+    padding: 10px;
+  }
+/* Add animation keyframes */
+@keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  /* Apply animation to the order button */
+  #order-btn {
+    animation: pulse 2s infinite;
+  }
+  .order-button {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 999;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .order-button:hover {
+    background-color: #45a049;
+  }    
